@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  text-rendering: optimizeSpeed;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $default-color;
+  margin: 0 auto;
+  @extend %JosefinSans-400;
+}
+.main {
+  flex-grow: 1;
+}
+h1, h2, h3, h4, h5 {
+  @extend %CormorantInfant-400;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 110px;
+  line-height: 1.1;
+  color: #fff;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 25px;
+  color: #fff;
+}
+// h5 {
+//   @extend %roboto-500;
+//   font-size: 16px;
+//   color: $default-color2;
+//   line-height: 23px;
+//   text-transform: uppercase;
+// }
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: $text-color;
+  letter-spacing: 0.2px;
+}
+
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.button {
+  border: 1px solid $accent-color;
+  font-size: 22px;
+  color: $accent-color;
+  background-color: transparent;
+  transition: all 0.8s;
+  padding: 20px 57px;
+  &:hover {
+    color: $default-color;
+    background-color: $accent-color;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1360px;
+}

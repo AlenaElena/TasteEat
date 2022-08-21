@@ -1,0 +1,545 @@
+@media(max-width: 1180px) {
+  h1 {
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  .about__content {
+    &-wrap {
+      margin-left: 20px;
+    }
+    &-items {
+      flex-direction: column;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 15px;
+      &:first-child {
+        margin-right: 0;
+      }
+      &__text {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .services {
+    &__content {
+      flex-direction: column;
+      .section__header--services {
+        flex-basis: 100%;
+      }
+    }
+    &__items {
+      flex-basis: 100%;
+      margin-top: 50px;
+    }
+    &__item {
+      flex-basis: 100%;
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+      
+    }
+  }
+  
+  .footer  {
+    &::after {
+      bottom: 150px;
+    }
+  }
+  .footer__content {
+    &-info {
+      flex-wrap: wrap;
+      &__feedback {
+        margin: 30px 0;
+      }
+      &__text {
+        text-align: start;
+        max-width: 100%;
+      }
+      &__wrap--time {
+        text-align: start;
+      }
+    }
+  }
+  .footer__copy {
+    flex-direction: column;
+    &-text {
+      margin-bottom: 20px;
+    }
+    &-item {
+      margin-left: 0;
+    }
+  }
+}
+
+@media(max-width: 1090px) {
+  .header__top {
+    flex-wrap: wrap;
+  }
+  .header__bottom {
+    &-list {
+      &__item {
+        margin-right: 20px;
+      }    
+    }
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+  .about__top {
+    flex-wrap: wrap;
+    justify-content: center;
+    &-item {
+      margin: 20px 0;
+    }
+  }
+  .about__content {
+    margin-top: 50px;
+    flex-direction: column;
+    &-img {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+      img {
+        margin: 0 auto;
+      }
+    }
+    &-wrap {
+      margin-left: 0;
+    }
+  }
+
+  .blog {
+    &__item {
+      & + .blog__item {
+        margin-left: 10px;
+      }
+      &-content {
+        padding: 30px 10px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .menu {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__special {
+      flex-basis: 100%;
+      margin-right: 0;
+      text-align: center;
+      &-img {
+        margin: 30px auto 60px;
+      }
+    } 
+  }
+  .menu__content {
+    flex-basis: 100%;
+  }
+}
+
+@media(max-width: 920px) {
+  .header__bottom {
+    .burger-btn {
+      display: flex;
+      &--active {
+        span {
+          display: none;
+        }
+        &::before {
+          top: 7px;
+          transform: rotate(45deg);
+          background-color: $accent-color;
+        }
+        &::after {
+          background-color: $accent-color;
+          bottom: 15px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    &-list {
+      transition: all 0.7s;
+      transform: translateX(-200%);
+      display: block;
+      position: absolute;
+      background-color: rgba(41, 46, 54, 0.9);
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 1;
+      &--active {
+        transform: translateX(0);
+      }
+      &__item {
+        margin: 10px 0;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .intro {
+    padding: 50px 0;
+    &__wrap {
+      flex-direction: column-reverse;
+    }
+  }
+  .intro__content {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+  .intro__img {
+    flex-basis: 100%;
+    img {
+      width: 100%; 
+    }
+  }
+
+  .menu {
+    padding: 50px 0;
+  }
+
+  .testimonial {
+    padding: 50px 0 630px;
+  }
+
+  .offers {
+    padding: 50px 0;
+  }
+  .offers__card {
+    flex-direction: column;
+  }
+
+  .popular-menu {
+    padding-bottom: 50px;
+  }
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .blog {
+    padding: 50px 0;
+    &__items {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    &__item {
+      flex-basis: 100%;
+      margin-top: 40px;
+      &+.blog__item {
+        margin-left: 0;
+      }
+      &-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+  .footer__content {
+    &-top {
+      flex-direction: column;
+      &__logo {
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 780px) {
+  .button {
+    padding: 12px 48px; 
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+
+  .header__top {
+    padding-bottom: 10px;
+    flex-direction: column;
+    &-logo {
+      margin: 20px;
+    }
+    &-tel {
+      padding: 12px 15px;
+      font-size: 20px;
+    } 
+    &-booking {
+      padding: 12px 45px;
+      font-size: 20px;
+    }
+  }
+
+  .menu {
+    &__special {
+      &-btn {
+        padding: 12px 35px;
+        font-size: 20px;
+      }
+    }
+  }
+  .menu__content {
+    &-title {
+      margin-bottom: 25px;
+    }
+    &-list {
+      margin-bottom: 35px;
+    }
+    &-item {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .offers__card {
+    &-content {
+      &__price {
+        span {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+
+  .popular-menu {
+    &__btn {
+      max-width: 210px;
+      padding: 20px 35px;
+      font-size: 20px;
+    }
+  }
+
+  .services {
+    &__items {
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin: 10px 0;   
+    }
+  }
+
+  .blog {
+    &__item {
+      &-img {
+         &__btn {
+          padding: 12px 50px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .reservation {
+    &__form {
+      padding: 40px;
+    }
+    &__input {
+      &-wrap {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      margin-bottom: 30px;
+      &+.reservation__input {
+        margin-left: 0;
+      }
+    }
+    &__btn {
+      padding: 17px 38px;
+      font-size: 20px;
+    }
+  }
+
+
+}
+
+@media(max-width: 630px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .intro__img {
+    border-left-width: 5px;
+    border-right-width: 5px;
+    &::before {
+      height: 5px;
+      top: -5px;
+    }
+  }
+
+  .menu__content {
+    padding: 0 30px;
+    &-item {
+      &__info {
+        max-width: 300px;
+        width: 100%;
+      }
+      &__consist {
+        white-space: normal;
+        width: 100%;
+      }
+      &__line {
+        display: none;
+      }
+    }
+  }
+
+  .testimonial {
+    padding: 50px 0 500px;
+    &::after {
+      height: 450px;
+    }
+  }
+  .testimonial__slide {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .services {
+    &__items {
+      padding: 0 30px;
+    }
+  }
+
+  .reservation {
+    height: 850px;
+    &__form {
+      padding: 10px;
+    }
+  }
+
+  .footer__content {
+    &-info {
+      &__wrap--contacts,
+      &__wrap--time {
+        flex-basis: 100%;
+      }
+      &__subtitle {
+        margin-bottom: 10px;
+        &--active::after {
+          transform: rotate(0); 
+        }
+      }
+      &__list {
+        display: none;
+        &--active {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+
+
+  .intro__img {
+    &-decor {
+      display: none;
+    }
+  }
+
+  .testimonial__slider {
+    .swiper-pagination-bullet {
+      display: none;
+    }
+  }
+
+  .offers {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+  .offers__card {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+
+  .blog {
+    &__item {
+      &-content {
+        padding: 10px;
+      }
+      &-link {
+        font-size: 12px;
+        margin-right: 20px;
+      }
+      &-title {
+        margin: 14px 0;
+      }
+    }
+  }
+
+  .footer__content {
+    &-info {
+      &__input {
+        padding: 15px 20px;
+        max-width: 100%;
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
+      &__btn {
+        font-size: 18px;
+        padding: 15px 20px;
+        transition: all 0.7s;
+      }
+    }
+  }
+}
+
+@media(max-width: 375px) {
+  .menu__content {
+    padding: 0;
+    &-item {
+      &:hover {
+        transform: scale(1);
+      }
+      &__img {
+        display: none;
+      }
+    }
+  }
+}
